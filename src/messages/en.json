@@ -1,0 +1,209 @@
+{
+  "meta": {
+    "title": "PLATA925 | Certified .925 Silver Jewelry — 100% Mexican",
+    "description": "Earrings, bracelets, charms, chains, hoop earrings and rings in authentic .925 silver. Certified by the Silver Regulatory Council A.C. of Taxco. Shipping across the USA. Buy on WhatsApp."
+  },
+  "nav": {
+    "collections": "Collections",
+    "whyUs": "Why silver?",
+    "certification": "Certification",
+    "testimonials": "Reviews",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "cta": "Buy on WhatsApp"
+  },
+  "whatsapp": {
+    "defaultMessage": "Hi, I'm interested in a PLATA925 piece 💍",
+    "aretes": "Hi, I'm interested in PLATA925 earrings 💍",
+    "pulseras": "Hi, I'm interested in PLATA925 bracelets 💍",
+    "dijes": "Hi, I'm interested in PLATA925 charms 💍",
+    "cadenas": "Hi, I'm interested in PLATA925 chains 💍",
+    "arracadas": "Hi, I'm interested in PLATA925 hoop earrings 💍",
+    "anillos": "Hi, I'm interested in PLATA925 rings 💍",
+    "esclavas": "Hi, I'm interested in PLATA925 bangles 💍",
+    "ring3d": "Hi, I'm interested in the heart ring I saw on the website 💍",
+    "hoop3d": "Hi, I'm interested in the hoop earrings I saw on the website 💍",
+    "charm3d": "Hi, I'm interested in the heart charm I saw on the website 💍",
+    "ingot3d": "Hi, I'm interested in learning more about your pure silver 💍",
+    "floatingLabel": "Buy now",
+    "floatingAriaLabel": "Open WhatsApp to buy"
+  },
+  "hero": {
+    "headline": "Certified .925 silver jewelry,\nmade for you.",
+    "subheadline": "Unique designs in authentic Mexican silver. Certified by the Silver Regulatory Council. Exclusive shipping to the USA. No tarnish. No allergies. Forever.",
+    "ctaPrimary": "I want my piece — WhatsApp",
+    "ctaSecondary": "View collections",
+    "trust1": "CRP Taxco Certified",
+    "trust2": "Authentic .925 Silver",
+    "trust3": "Shipping across the USA",
+    "trust4": "Lifetime guarantee"
+  },
+  "trustBar": {
+    "item1Title": "NOM-033/1-SE-2020 Certified",
+    "item1Sub": "Mexican Official Standard",
+    "item2Title": "Silver Regulatory Council A.C.",
+    "item2Sub": "Taxco, Guerrero — Mexico",
+    "item3Title": "Sterling Silver .925 — 92.5% pure",
+    "item3Sub": "Certified sterling alloy",
+    "item4Title": "Made in Mexico",
+    "item4Sub": "Mexican artisans"
+  },
+  "collections": {
+    "title": "Find your perfect piece",
+    "subtitle": "Every piece, a story. All in certified .925 silver.",
+    "cta": "View collection →",
+    "aretes": {
+      "name": "Earrings",
+      "description": "From classic hoops to modern designs. For every occasion."
+    },
+    "pulseras": {
+      "name": "Bracelets",
+      "description": "Delicate or bold, always in pure silver. Adapts to your style."
+    },
+    "dijes": {
+      "name": "Charms",
+      "description": "Hearts, moons, flowers... the charm that represents you."
+    },
+    "cadenas": {
+      "name": "Chains",
+      "description": "Fine or chunky, perfect alone or with a charm."
+    },
+    "arracadas": {
+      "name": "Hoop Earrings",
+      "description": "Authentic Mexican style in real .925 silver."
+    },
+    "anillos": {
+      "name": "Rings",
+      "description": "For every finger, a special occasion."
+    },
+    "esclavas": {
+      "name": "Bangles",
+      "description": "Rigid luxury bangles in .925 silver. Elegant and timeless."
+    },
+    "stockLast": "Last piece!",
+    "stockFew": "Only {n} left",
+    "stockLow": "Limited stock"
+  },
+  "categoryPage": {
+    "back": "Collections",
+    "available": "{n} designs available",
+    "viewProduct": "View details",
+    "ctaGeneral": "Ask about this category"
+  },
+  "productPage": {
+    "back": "Back",
+    "material": ".925 Silver | NOM-033/1-SE-2020 Certified",
+    "certified": "Certified piece",
+    "cta": "I'm interested — talk to an advisor",
+    "ctaAriaLabel": "Open WhatsApp to speak with an advisor about this piece",
+    "shareMessage": "Hi, I'm interested in the following PLATA925 piece: {name} 💍 Can you give me more information?"
+  },
+  "viewer3d": {
+    "title": "The best quality silver from Mexico",
+    "subtitle": "Discover the origin of your jewelry. Pure .925 silver ready to be transformed.",
+    "instructions": "Drag to rotate · Scroll to zoom",
+    "ingot": { "name": "Silver Ingot", "cta": "I'm interested to know more" }
+  },
+  "urgency": {
+    "badge": "OFFER",
+    "title": "FREE SHIPPING to the USA on orders over $50 USD",
+    "subtitle": "This week only · Limited stock",
+    "cta": "Claim it now — WhatsApp"
+  },
+  "whyUs": {
+    "title": "Real silver. Guaranteed.",
+    "subtitle": "We know buying jewelry online is scary. That's why we're fully transparent.",
+    "item1Title": "Doesn't tarnish",
+    "item1Desc": "Properly cared for .925 silver lasts a lifetime. We explain exactly how to care for it when you receive it.",
+    "item2Title": "Safe for sensitive skin",
+    "item2Desc": "No nickel, no lead. Certified under NOM-033/1-SE-2020 for direct skin contact.",
+    "item3Title": "Hologram certificate",
+    "item3Desc": "Every piece includes a physical certificate from the Silver Regulatory Council A.C. Your lifetime guarantee.",
+    "item4Title": "Made in Mexico",
+    "item4Desc": "Mexican artisans. Mexican silver. Every purchase supports local workshops and fair trade."
+  },
+  "process": {
+    "title": "Buying is easy",
+    "subtitle": "No forms, no waiting. Just you and your jewelry.",
+    "step1Title": "Choose your piece",
+    "step1Desc": "Browse the collections and find the one you love.",
+    "step2Title": "Message us on WhatsApp",
+    "step2Desc": "Tell us which one you want and your size if needed. We reply in minutes.",
+    "step3Title": "Confirm your order",
+    "step3Desc": "We send real photos of your piece and a quote with shipping included.",
+    "step4Title": "Receive it at home",
+    "step4Desc": "We ship across the USA. Discreet, secure packaging with tracking number.",
+    "cta": "Start now — WhatsApp"
+  },
+  "testimonials": {
+    "title": "What our customers say",
+    "subtitle": "Over 500 women already wear PLATA925.",
+    "t1Name": "Fernanda M.",
+    "t1Location": "Los Angeles, CA",
+    "t1Age": "28 years old",
+    "t1Text": "I'd been hesitant to buy silver online but the hologram certificate convinced me. My hoop earrings are beautiful and haven't tarnished at all.",
+    "t2Name": "Karla G.",
+    "t2Location": "Chicago, IL",
+    "t2Age": "34 years old",
+    "t2Text": "I gifted my mom a bracelet for her birthday and she cried. The quality is incredible for the price. It arrived beautifully packaged.",
+    "t3Name": "Sofía R.",
+    "t3Location": "Houston, TX",
+    "t3Age": "22 years old",
+    "t3Text": "The heart charm looks exactly as shown on the page, even more beautiful in person. They replied on WhatsApp in 5 minutes.",
+    "t4Name": "Daniela P.",
+    "t4Location": "Miami, FL",
+    "t4Age": "31 years old",
+    "t4Text": "This is my third purchase and they keep impressing me. The rings are perfect for my sensitive skin, never any reaction.",
+    "t5Name": "Ana L.",
+    "t5Location": "Dallas, TX",
+    "t5Age": "26 years old",
+    "t5Text": "I was so moved to receive the Regulatory Council certificate. You can tell this is real silver. My earrings are my favorite piece.",
+    "t6Name": "Roberto H.",
+    "t6Location": "San Antonio, TX",
+    "t6Age": "38 years old",
+    "t6Text": "I bought a chain for my wife and she was thrilled. They helped me choose the right length on WhatsApp. Excellent service."
+  },
+  "certification": {
+    "title": "The backing your silver deserves",
+    "body": "Every PLATA925 piece is certified under Mexican Official Standard NOM-033/1-SE-2020, endorsed by the Silver Regulatory Council A.C. of Taxco, Guerrero — the only body in Mexico that guarantees the authenticity of .925 sterling silver.",
+    "seal1": "Verified 92.5% pure silver",
+    "seal2": "Subject to annual audits",
+    "seal3": "Physical certificate with every purchase",
+    "cta": "I want my certified piece — WhatsApp"
+  },
+  "faq": {
+    "title": "Frequently asked questions",
+    "q1": "How do I know the silver is authentic?",
+    "a1": "Every piece includes a physical hologram certificate issued by the Silver Regulatory Council A.C. of Taxco under NOM-033/1-SE-2020. You can also request a video of your piece before buying.",
+    "q2": "Does the silver tarnish or cause allergies?",
+    "a2": "Certified .925 silver contains no nickel or lead. It's safe for sensitive skin. With proper care, which we explain on delivery, it lasts a lifetime.",
+    "q3": "How does the buying process work?",
+    "a3": "Choose your piece, message us on WhatsApp, we send real photos and a quote, you confirm and we ship. No accounts or forms required.",
+    "q4": "Do you ship to the USA?",
+    "a4": "Yes, we ship nationwide across the USA. Secure, discreet packaging with a tracking number. Estimated time: 3 to 5 business days.",
+    "q5": "Can I order custom sizes?",
+    "a5": "Absolutely. For rings and bracelets we help you find your exact size on WhatsApp before confirming your order.",
+    "q6": "What if my piece arrives damaged?",
+    "a6": "We guarantee perfect delivery. If something goes wrong, we replace the piece at no extra cost. Your satisfaction is our priority."
+  },
+  "ctaFinal": {
+    "headline": "Your perfect piece\nis waiting for you.",
+    "subheadline": "Message us now and get personalized attention. We reply in under 5 minutes.",
+    "cta": "Message PLATA925",
+    "hours": "Monday to Saturday · 9am to 9pm"
+  },
+  "footer": {
+    "tagline": "Certified .925 silver jewelry. 100% Mexican.",
+    "collectionsTitle": "Collections",
+    "infoTitle": "Information",
+    "contactTitle": "Contact",
+    "whyUs": "Why .925 silver?",
+    "certificationLink": "Certification",
+    "processLink": "How to buy",
+    "faqLink": "FAQ",
+    "privacy": "Privacy policy",
+    "terms": "Terms and conditions",
+    "copyright": "© 2025 PLATA925. All rights reserved. Made with ♥ in Mexico.",
+    "certBadge": "NOM-033/1-SE-2020 Certified"
+  }
+}

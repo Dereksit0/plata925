@@ -1,0 +1,209 @@
+{
+  "meta": {
+    "title": "PLATA925 | Joyería de Plata .925 Certificada — 100% Mexicana",
+    "description": "Aretes, pulseras, dijes, cadenas, arracadas y anillos en plata .925 auténtica. Certificado del Consejo Regulador de la Plata A.C. de Taxco. Envíos a todo Estados Unidos. Compra por WhatsApp."
+  },
+  "nav": {
+    "collections": "Colecciones",
+    "whyUs": "¿Por qué plata?",
+    "certification": "Certificación",
+    "testimonials": "Testimonios",
+    "faq": "FAQ",
+    "contact": "Contacto",
+    "cta": "Comprar por WhatsApp"
+  },
+  "whatsapp": {
+    "defaultMessage": "Hola, me interesa una joya de PLATA925 💍",
+    "aretes": "Hola, me interesan los aretes de PLATA925 💍",
+    "pulseras": "Hola, me interesan las pulseras de PLATA925 💍",
+    "dijes": "Hola, me interesan los dijes de PLATA925 💍",
+    "cadenas": "Hola, me interesan las cadenas de PLATA925 💍",
+    "arracadas": "Hola, me interesan las arracadas de PLATA925 💍",
+    "anillos": "Hola, me interesan los anillos de PLATA925 💍",
+    "esclavas": "Hola, me interesan las esclavas de PLATA925 💍",
+    "ring3d": "Hola, me interesa el anillo de corazón que vi en la página 💍",
+    "hoop3d": "Hola, me interesan las arracadas que vi en la página 💍",
+    "charm3d": "Hola, me interesa el dije de corazón que vi en la página 💍",
+    "ingot3d": "Hola, me interesa conocer más sobre su plata pura 💍",
+    "floatingLabel": "Comprar ahora",
+    "floatingAriaLabel": "Abrir WhatsApp para comprar"
+  },
+  "hero": {
+    "headline": "Joyería de plata .925\ncertificada, hecha para ti.",
+    "subheadline": "Diseños únicos en plata mexicana auténtica. Con certificado del Consejo Regulador de la Plata. Envíos exclusivos a Estados Unidos. Sin oxidación. Sin alergias. Para siempre.",
+    "ctaPrimary": "Quiero mi joya — WhatsApp",
+    "ctaSecondary": "Ver colecciones",
+    "trust1": "Certificado CRP Taxco",
+    "trust2": "Plata .925 auténtica",
+    "trust3": "Envío a todo Estados Unidos",
+    "trust4": "Garantía de por vida"
+  },
+  "trustBar": {
+    "item1Title": "Certificado NOM-033/1-SE-2020",
+    "item1Sub": "Norma Oficial Mexicana",
+    "item2Title": "Consejo Regulador de la Plata A.C.",
+    "item2Sub": "Taxco, Guerrero — México",
+    "item3Title": "Plata .925 — 92.5% pura",
+    "item3Sub": "Aleación esterlina certificada",
+    "item4Title": "Hecho en México",
+    "item4Sub": "Artesanos mexicanos"
+  },
+  "collections": {
+    "title": "Encuentra tu joya perfecta",
+    "subtitle": "Cada pieza, una historia. Todas en plata .925 certificada.",
+    "cta": "Ver colección →",
+    "aretes": {
+      "name": "Aretes",
+      "description": "Desde argollas clásicas hasta diseños modernos. Para cada ocasión."
+    },
+    "pulseras": {
+      "name": "Pulseras",
+      "description": "Delicadas o llamativas, siempre en plata pura. Se adaptan a tu estilo."
+    },
+    "dijes": {
+      "name": "Dijes",
+      "description": "Corazones, lunas, flores... el dije que te representa."
+    },
+    "cadenas": {
+      "name": "Cadenas",
+      "description": "Finas o gruesas, perfectas solas o con dije."
+    },
+    "arracadas": {
+      "name": "Arracadas",
+      "description": "Estilo mexicano auténtico en plata .925 de verdad."
+    },
+    "anillos": {
+      "name": "Anillos",
+      "description": "Para cada dedo, una ocasión especial."
+    },
+    "esclavas": {
+      "name": "Esclavas",
+      "description": "Pulseras rígidas de lujo en plata .925. Elegantes y atemporales."
+    },
+    "stockLast": "¡Última pieza!",
+    "stockFew": "Solo {n} disponibles",
+    "stockLow": "Stock limitado"
+  },
+  "categoryPage": {
+    "back": "Colecciones",
+    "available": "{n} diseños disponibles",
+    "viewProduct": "Ver detalles",
+    "ctaGeneral": "Preguntar por esta categoría"
+  },
+  "productPage": {
+    "back": "Regresar",
+    "material": "Plata .925 | Certificado NOM-033/1-SE-2020",
+    "certified": "Pieza certificada",
+    "cta": "Me interesa — hablar con asesor",
+    "ctaAriaLabel": "Abrir WhatsApp para hablar con un asesor sobre esta pieza",
+    "shareMessage": "Hola, me interesa la siguiente pieza de PLATA925: {name} 💍 ¿Me pueden dar más información?"
+  },
+  "viewer3d": {
+    "title": "La mejor calidad en plata desde México",
+    "subtitle": "Conoce el origen de tus joyas. Plata pura .925 lista para transformarse.",
+    "instructions": "Arrastra para rotar · Scroll para zoom",
+    "ingot": { "name": "Lingote de Plata", "cta": "Me interesa conocer más" }
+  },
+  "urgency": {
+    "badge": "OFERTA",
+    "title": "ENVÍO GRATIS a todo Estados Unidos en compras mayores a $50 USD",
+    "subtitle": "Solo esta semana · Piezas con stock limitado",
+    "cta": "Aprovechar ahora — WhatsApp"
+  },
+  "whyUs": {
+    "title": "Plata de verdad. Garantizado.",
+    "subtitle": "Sabemos que comprar joyería en línea da miedo. Por eso somos transparentes en todo.",
+    "item1Title": "No se oxida",
+    "item1Desc": "La plata .925 tratada correctamente dura toda la vida. Al comprar te explicamos cómo cuidarla paso a paso.",
+    "item2Title": "Apta para piel sensible",
+    "item2Desc": "Sin níquel, sin plomo. Certificada bajo NOM-033/1-SE-2020 para uso en contacto directo con piel.",
+    "item3Title": "Certificado con holograma",
+    "item3Desc": "Cada pieza incluye su certificado físico del Consejo Regulador de la Plata A.C. Es tu garantía de por vida.",
+    "item4Title": "Hecha en México",
+    "item4Desc": "Artesanos mexicanos. Plata mexicana. Cada compra apoya talleres locales y el comercio justo."
+  },
+  "process": {
+    "title": "Comprar es muy fácil",
+    "subtitle": "Sin formularios, sin esperas. Solo tú y tu joya.",
+    "step1Title": "Elige tu joya",
+    "step1Desc": "Navega por las colecciones y encuentra la que te enamore.",
+    "step2Title": "Escríbenos por WhatsApp",
+    "step2Desc": "Dinos cuál quieres y tu talla si aplica. Respondemos en minutos.",
+    "step3Title": "Confirma tu pedido",
+    "step3Desc": "Te enviamos fotos reales de tu pieza y la cotización con envío incluido.",
+    "step4Title": "Recíbela en casa",
+    "step4Desc": "Enviamos a todo Estados Unidos. Empaque discreto y seguro con número de rastreo.",
+    "cta": "Empezar ahora — WhatsApp"
+  },
+  "testimonials": {
+    "title": "Lo que dicen nuestras clientas",
+    "subtitle": "Más de 500 mujeres ya llevan PLATA925 con ellas.",
+    "t1Name": "Fernanda M.",
+    "t1Location": "Los Ángeles, CA",
+    "t1Age": "28 años",
+    "t1Text": "Llevaba tiempo dudando de comprar plata online pero el certificado con holograma me convenció. Mis arracadas son preciosas y no se han oxidado nada.",
+    "t2Name": "Karla G.",
+    "t2Location": "Chicago, IL",
+    "t2Age": "34 años",
+    "t2Text": "Le regalé a mi mamá una pulsera para su cumpleaños y lloró de emoción. La calidad es increíble para el precio. Llegó super bien empacada.",
+    "t3Name": "Sofía R.",
+    "t3Location": "Houston, TX",
+    "t3Age": "22 años",
+    "t3Text": "El dije de corazón es exactamente como lo vi en la página, incluso más bonito. Me respondieron por WhatsApp en 5 minutos.",
+    "t4Name": "Daniela P.",
+    "t4Location": "Miami, FL",
+    "t4Age": "31 años",
+    "t4Text": "Ya van tres compras y cada vez me sorprenden. Los anillos son perfectos para mi piel sensible, nunca me dan alergia.",
+    "t5Name": "Ana L.",
+    "t5Location": "Dallas, TX",
+    "t5Age": "26 años",
+    "t5Text": "Me emocionó recibir el certificado del Consejo Regulador. Se nota que venden plata de verdad. Mis aretes son mi joya favorita.",
+    "t6Name": "Roberto H.",
+    "t6Location": "San Antonio, TX",
+    "t6Age": "38 años",
+    "t6Text": "Le compré una cadena a mi esposa y quedó fascinada. Me ayudaron a elegir el tamaño por WhatsApp. Excelente servicio."
+  },
+  "certification": {
+    "title": "Plata .925 con el respaldo que mereces",
+    "body": "Cada pieza de PLATA925 está certificada bajo la Norma Oficial Mexicana NOM-033/1-SE-2020, avalada por el Consejo Regulador de la Plata A.C. de Taxco, Guerrero — el único organismo en México que garantiza la autenticidad de la plata esterlina .925.",
+    "seal1": "92.5% plata pura comprobada",
+    "seal2": "Sujeto a auditorías anuales",
+    "seal3": "Certificado físico con cada compra",
+    "cta": "Quiero mi joya certificada — WhatsApp"
+  },
+  "faq": {
+    "title": "Preguntas frecuentes",
+    "q1": "¿Cómo sé que la plata es auténtica?",
+    "a1": "Todas nuestras piezas incluyen certificado físico con holograma emitido por el Consejo Regulador de la Plata A.C. de Taxco, bajo la NOM-033/1-SE-2020. También puedes solicitar video de la pieza antes de comprar.",
+    "q2": "¿La plata se oxida o me da alergia?",
+    "a2": "La plata .925 certificada no contiene níquel ni plomo. Es apta para piel sensible. Con el cuidado adecuado, que te explicamos al entregar, dura toda la vida.",
+    "q3": "¿Cómo funciona el proceso de compra?",
+    "a3": "Elige tu joya, escríbenos por WhatsApp, te enviamos fotos reales y cotización, confirmas y enviamos. Sin registros ni formularios.",
+    "q4": "¿Hacen envíos a Estados Unidos?",
+    "a4": "Sí, enviamos a todo Estados Unidos. Empaque seguro y discreto con número de rastreo. Tiempo estimado: 3 a 5 días hábiles.",
+    "q5": "¿Puedo pedir tallas personalizadas?",
+    "a5": "Por supuesto. En anillos y pulseras te ayudamos a encontrar tu talla exacta por WhatsApp antes de confirmar.",
+    "q6": "¿Qué pasa si mi joya llega dañada?",
+    "a6": "Garantizamos la entrega perfecta. Si algo sale mal, reponemos la pieza sin costo adicional. Tu satisfacción es nuestra prioridad."
+  },
+  "ctaFinal": {
+    "headline": "Tu joya perfecta\nte está esperando.",
+    "subheadline": "Escríbenos ahora y recibe atención personalizada. Respondemos en menos de 5 minutos.",
+    "cta": "Escribir a PLATA925",
+    "hours": "Lunes a Sábado · 9am a 9pm"
+  },
+  "footer": {
+    "tagline": "Joyería de plata .925 certificada. 100% mexicana.",
+    "collectionsTitle": "Colecciones",
+    "infoTitle": "Información",
+    "contactTitle": "Contacto",
+    "whyUs": "¿Por qué plata .925?",
+    "certificationLink": "Certificación",
+    "processLink": "Proceso de compra",
+    "faqLink": "FAQ",
+    "privacy": "Política de privacidad",
+    "terms": "Términos y condiciones",
+    "copyright": "© 2025 PLATA925. Todos los derechos reservados. Hecho con ♥ en México.",
+    "certBadge": "Certificado NOM-033/1-SE-2020"
+  }
+}
