@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Dark modern background for contrast against browser tabs -->
+  <rect width="512" height="512" rx="120" fill="#1A1A1A" />
+  
+  <!-- The letter "P" in white -->
+  <text 
+    x="236" 
+    y="290" 
+    font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" 
+    font-size="360" 
+    font-weight="900" 
+    fill="#FEFEFE" 
+    text-anchor="middle" 
+    dominant-baseline="middle"
+  >
+    P
+  </text>
+  
+  <!-- A pink accent dot, representing a jewel/925, at the bottom right -->
+  <circle cx="350" cy="370" r="50" fill="#ED5082" />
+</svg>
