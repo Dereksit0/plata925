@@ -28,7 +28,7 @@ export default function Hero() {
           fill
           priority
           sizes="100vw"
-          className="object-cover object-[115%_top] lg:object-right"
+          className="object-cover object-[85%_top] lg:object-right"
         />
 
         {/* Mobile: image fully visible, only subtle fade at very bottom for buttons */}

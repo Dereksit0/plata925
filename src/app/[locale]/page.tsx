@@ -3,7 +3,7 @@ import Footer from '@/components/shared/footer';
 import Hero from '@/components/sections/hero';
 import TrustBar from '@/components/sections/trust-bar';
 import Collections from '@/components/sections/collections';
-import ProductViewer3D from '@/components/sections/product-3d-viewer';
+
 import UrgencyBanner from '@/components/sections/urgency-banner';
 import WhyUs from '@/components/sections/why-us';
 import Process from '@/components/sections/process';
@@ -26,7 +26,7 @@ export default async function LocalePage({ params }: Props) {
       <Hero />
       <TrustBar />
       <Collections />
-      <ProductViewer3D />
+
       <UrgencyBanner />
       <WhyUs />
       <Process />

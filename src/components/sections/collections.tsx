@@ -69,9 +69,9 @@ export default function Collections() {
           </motion.p>
         </div>
 
-        {/* Mobile: horizontal scroll — from sm+: grid */}
-        <div className="-mx-4 overflow-x-auto px-4 pb-3 sm:mx-0 sm:overflow-visible sm:px-0 sm:pb-0">
-          <div className="flex w-max gap-4 sm:w-auto sm:grid sm:gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        {/* Grid layout: 2 cols on mobile, 3 on lg, 4 on xl */}
+        <div className="pb-3">
+          <div className="grid grid-cols-2 gap-3 sm:gap-5 lg:grid-cols-3 xl:grid-cols-4">
           {CATEGORIES.map((cat, i) => {
             const catName = t(`${cat.key}.name`);
             const catDesc = t(`${cat.key}.description`);
@@ -83,7 +83,6 @@ export default function Collections() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: '-50px' }}
                 transition={{ duration: 0.45, delay: i * 0.07 }}
-                className="w-[62vw] max-w-[260px] flex-none sm:w-auto sm:max-w-none"
               >
                 <Link
                   href={`/${locale}/collections/${cat.key}`}
@@ -96,26 +95,26 @@ export default function Collections() {
                       src={cat.imageUrl}
                       alt={cat.imageAlt}
                       fill
-                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 25vw"
+                      sizes="(max-width: 640px) 50vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 25vw"
                       className="object-cover transition-transform duration-500 group-hover:scale-105"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/10 to-transparent" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/10 to-transparent" />
 
                     {/* Stock badge — top-right corner */}
-                    <div className="absolute right-3 top-3">
+                    <div className="absolute right-2 top-2 sm:right-3 sm:top-3 scale-90 sm:scale-100 origin-top-right">
                       <StockBadge stock={cat.stock} t={t} />
                     </div>
                   </div>
 
                   {/* Content overlay */}
-                  <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-5">
-                    <h3 className="font-display text-lg font-bold text-white sm:text-xl">
+                  <div className="absolute bottom-0 left-0 right-0 p-3 sm:p-5">
+                    <h3 className="font-display text-base font-bold text-white sm:text-xl">
                       {catName}
                     </h3>
-                    <p className="mt-1 line-clamp-2 text-xs text-white/80 sm:text-sm">
+                    <p className="mt-0.5 line-clamp-1 text-[10px] text-white/80 sm:mt-1 sm:line-clamp-2 sm:text-sm">
                       {catDesc}
                     </p>
-                    <span className="mt-3 inline-block rounded-full bg-[#ED5082] px-4 py-1.5 text-xs font-semibold text-white transition-colors group-hover:bg-[#D4407A] sm:mt-4 sm:px-5 sm:py-2 sm:text-sm">
+                    <span className="mt-2 inline-block rounded-full bg-[#ED5082] px-3 py-1 text-[10px] font-semibold text-white transition-colors group-hover:bg-[#D4407A] sm:mt-4 sm:px-5 sm:py-2 sm:text-sm">
                       {t('cta')}
                     </span>
                   </div>
