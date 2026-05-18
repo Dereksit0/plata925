@@ -28,7 +28,7 @@ export default function Hero() {
           fill
           priority
           sizes="100vw"
-          className="object-cover object-[85%_top] lg:object-right"
+          className="object-cover object-[80%_top] blur-[2px] lg:object-right lg:blur-none"
         />
 
         {/* Mobile: image fully visible, only subtle fade at very bottom for buttons */}
@@ -92,6 +92,21 @@ export default function Hero() {
         >
           {t('subheadline')}
         </p>
+
+        {/* Mobile Headline — hidden on desktop, visible on mobile */}
+        <h1 className="mb-12 block font-display text-4xl font-bold leading-tight tracking-tight text-white drop-shadow-md lg:hidden">
+          {t('mobileHeadline').split('\n').map((line, i) => (
+            <span key={i} className="block">
+              {/(\.925)/.test(line) ? (
+                line.split(/(\.925)/).map((part, j) =>
+                  /(\.925)/.test(part) ? (
+                    <span key={j} className="text-[#ED5082]">{part}</span>
+                  ) : part
+                )
+              ) : line}
+            </span>
+          ))}
+        </h1>
 
         {/* CTAs */}
         <div className="flex flex-col gap-3 sm:flex-row">
