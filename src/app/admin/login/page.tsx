@@ -21,7 +21,7 @@ export default function LoginPage() {
     const { error } = await supabase.auth.signInWithPassword({ email, password })
 
     if (error) {
-      toast.error('Credenciales incorrectas. Verifica tu email y contraseña.')
+      toast.error(error.message)
       setLoading(false)
       return
     }
