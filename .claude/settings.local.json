@@ -13,7 +13,30 @@
       "Bash(dir C:\\\\Users\\\\derek\\\\Documents\\\\plata\\\\public\\\\images /b)",
       "Bash(dir C:\\\\Users\\\\derek\\\\Documents\\\\plata\\\\public\\\\images\\\\*.png /b)",
       "PowerShell(Get-ChildItem -Path \"C:\\\\Users\\\\derek\\\\Documents\\\\plata\\\\public\" -Recurse -Force | ForEach-Object { $_.FullName })",
-      "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\derek\\\\Documents\\\\plata\\\\src\\\\app\" -Recurse -Name)"
+      "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\derek\\\\Documents\\\\plata\\\\src\\\\app\" -Recurse -Name)",
+      "Bash(node -e \"const pkg = require\\('./node_modules/@supabase/ssr/package.json'\\); console.log\\('@supabase/ssr:', pkg.version\\)\")",
+      "Bash(node -e \"const pkg = require\\('./node_modules/sonner/package.json'\\); console.log\\('sonner:', pkg.version\\)\")",
+      "Bash(npm list *)",
+      "Bash(npm cache *)",
+      "Bash(npm view *)",
+      "Bash(where yarn *)",
+      "Bash(where pnpm *)",
+      "Bash(npm config *)",
+      "Bash(copy src\\\\middleware.ts src\\\\proxy.ts)",
+      "Bash(del src\\\\middleware.ts)",
+      "Bash(npx tsc *)",
+      "Bash(git add *)",
+      "Bash(git restore *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git push *)",
+      "Bash(vercel --version)",
+      "Bash(npx vercel *)",
+      "Bash(node -e \"const url = process.env.NEXT_PUBLIC_SUPABASE_URL || ''; console.log\\(url ? new URL\\(url\\).hostname : 'no-env'\\)\")",
+      "Bash(npx next *)",
+      "Bash(vercel whoami *)",
+      "Bash(vercel link *)",
+      "Bash(vercel env *)",
+      "Bash(vercel --prod)"
     ]
   }
 }
