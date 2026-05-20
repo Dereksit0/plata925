@@ -33,7 +33,12 @@ function StockBadge({ stock, t }: { stock: number; t: ReturnType<typeof useTrans
   return null;
 }
 
-export default function Collections() {
+interface CollectionsProps {
+  /** Real stock per category key from Supabase, overrides hardcoded values */
+  stockMap?: Record<string, number>;
+}
+
+export default function Collections({ stockMap }: CollectionsProps) {
   const t = useTranslations('collections');
   const reduced = usePrefersReducedMotion();
   const params = useParams();
@@ -72,56 +77,58 @@ export default function Collections() {
         {/* Grid layout: 2 cols on mobile, 3 on lg, 4 on xl */}
         <div className="pb-3">
           <div className="grid grid-cols-2 gap-3 sm:gap-5 lg:grid-cols-3 xl:grid-cols-4">
-          {CATEGORIES.map((cat, i) => {
-            const catName = t(`${cat.key}.name`);
-            const catDesc = t(`${cat.key}.description`);
+            {CATEGORIES.map((cat, i) => {
+              const catName = t(`${cat.key}.name`);
+              const catDesc = t(`${cat.key}.description`);
+              // Use real stock from Supabase if available, otherwise hardcoded
+              const stock = stockMap?.[cat.key] ?? cat.stock;
 
-            return (
-              <motion.div
-                key={cat.key}
-                initial={reduced ? {} : { opacity: 0, y: 28 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: '-50px' }}
-                transition={{ duration: 0.45, delay: i * 0.07 }}
-              >
-                <Link
-                  href={`/${locale}/collections/${cat.key}`}
-                  className="group relative flex flex-col overflow-hidden rounded-[16px] bg-white shadow-[0_4px_20px_rgba(192,192,192,0.22)] transition-shadow hover:shadow-[0_8px_32px_rgba(237,80,130,0.15)] focus-visible:outline-2 focus-visible:outline-[#ED5082]"
-                  aria-label={catName}
+              return (
+                <motion.div
+                  key={cat.key}
+                  initial={reduced ? {} : { opacity: 0, y: 28 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, margin: '-50px' }}
+                  transition={{ duration: 0.45, delay: i * 0.07 }}
                 >
-                  {/* Image */}
-                  <div className="relative aspect-[3/4] overflow-hidden">
-                    <Image
-                      src={cat.imageUrl}
-                      alt={cat.imageAlt}
-                      fill
-                      sizes="(max-width: 640px) 50vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 25vw"
-                      className="object-cover transition-transform duration-500 group-hover:scale-105"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/10 to-transparent" />
+                  <Link
+                    href={`/${locale}/collections/${cat.key}`}
+                    className="group relative flex flex-col overflow-hidden rounded-[16px] bg-white shadow-[0_4px_20px_rgba(192,192,192,0.22)] transition-shadow hover:shadow-[0_8px_32px_rgba(237,80,130,0.15)] focus-visible:outline-2 focus-visible:outline-[#ED5082]"
+                    aria-label={catName}
+                  >
+                    {/* Image */}
+                    <div className="relative aspect-[3/4] overflow-hidden">
+                      <Image
+                        src={cat.imageUrl}
+                        alt={cat.imageAlt}
+                        fill
+                        sizes="(max-width: 640px) 50vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 25vw"
+                        className="object-cover transition-transform duration-500 group-hover:scale-105"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/10 to-transparent" />
 
-                    {/* Stock badge — top-right corner */}
-                    <div className="absolute right-2 top-2 sm:right-3 sm:top-3 scale-90 sm:scale-100 origin-top-right">
-                      <StockBadge stock={cat.stock} t={t} />
+                      {/* Stock badge — top-right corner */}
+                      <div className="absolute right-2 top-2 sm:right-3 sm:top-3 scale-90 sm:scale-100 origin-top-right">
+                        <StockBadge stock={stock} t={t} />
+                      </div>
                     </div>
-                  </div>
 
-                  {/* Content overlay */}
-                  <div className="absolute bottom-0 left-0 right-0 p-3 sm:p-5">
-                    <h3 className="font-display text-base font-bold text-white sm:text-xl">
-                      {catName}
-                    </h3>
-                    <p className="mt-0.5 line-clamp-1 text-[10px] text-white/80 sm:mt-1 sm:line-clamp-2 sm:text-sm">
-                      {catDesc}
-                    </p>
-                    <span className="mt-2 inline-block rounded-full bg-[#ED5082] px-3 py-1 text-[10px] font-semibold text-white transition-colors group-hover:bg-[#D4407A] sm:mt-4 sm:px-5 sm:py-2 sm:text-sm">
-                      {t('cta')}
-                    </span>
-                  </div>
-                </Link>
-              </motion.div>
-            );
-          })}
+                    {/* Content overlay */}
+                    <div className="absolute bottom-0 left-0 right-0 p-3 sm:p-5">
+                      <h3 className="font-display text-base font-bold text-white sm:text-xl">
+                        {catName}
+                      </h3>
+                      <p className="mt-0.5 line-clamp-1 text-[10px] text-white/80 sm:mt-1 sm:line-clamp-2 sm:text-sm">
+                        {catDesc}
+                      </p>
+                      <span className="mt-2 inline-block rounded-full bg-[#ED5082] px-3 py-1 text-[10px] font-semibold text-white transition-colors group-hover:bg-[#D4407A] sm:mt-4 sm:px-5 sm:py-2 sm:text-sm">
+                        {t('cta')}
+                      </span>
+                    </div>
+                  </Link>
+                </motion.div>
+              );
+            })}
           </div>
         </div>
       </div>
