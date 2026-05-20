@@ -4,10 +4,12 @@ import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import { createClient } from '@/lib/supabase/client'
 import { toast } from 'sonner'
-import { Lock, Mail, Eye, EyeOff, Gem } from 'lucide-react'
+import { Lock, User, Eye, EyeOff, Gem } from 'lucide-react'
+
+const ADMIN_DOMAIN = '@admin.plata'
 
 export default function LoginPage() {
-  const [email, setEmail] = useState('')
+  const [userId, setUserId] = useState('')
   const [password, setPassword] = useState('')
   const [showPassword, setShowPassword] = useState(false)
   const [loading, setLoading] = useState(false)
@@ -18,10 +20,11 @@ export default function LoginPage() {
     setLoading(true)
 
     const supabase = createClient()
+    const email = userId.trim().toLowerCase() + ADMIN_DOMAIN
     const { error } = await supabase.auth.signInWithPassword({ email, password })
 
     if (error) {
-      toast.error(error.message)
+      toast.error('ID o contraseña incorrectos.')
       setLoading(false)
       return
     }
@@ -54,17 +57,18 @@ export default function LoginPage() {
           <form onSubmit={handleLogin} className="space-y-4">
             <div>
               <label className="block text-sm font-semibold text-[#1A1A1A] mb-1.5">
-                Correo electrónico
+                ID de usuario
               </label>
               <div className="relative">
-                <Mail className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-[#ED5082]/60" />
+                <User className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-[#ED5082]/60" />
                 <input
-                  type="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  placeholder="admin@plata925.com"
+                  type="text"
+                  value={userId}
+                  onChange={(e) => setUserId(e.target.value)}
+                  placeholder="Tu ID de acceso"
                   required
-                  autoComplete="email"
+                  autoComplete="username"
+                  autoCapitalize="none"
                   className="w-full pl-10 pr-4 py-2.5 rounded-xl border border-[#E8E8E8] text-sm text-[#1A1A1A] focus:outline-none focus:ring-2 focus:ring-[#ED5082] focus:border-transparent transition-all bg-[#FAFAFA] placeholder-[#6B6B6B]/50"
                 />
               </div>
