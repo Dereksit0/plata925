@@ -3,7 +3,7 @@
 import { useState, useMemo } from 'react'
 import Link from 'next/link'
 import { Pencil, Package, ExternalLink, Search, X } from 'lucide-react'
-import DeleteProductButton from '@/components/admin/delete-product-button'
+import ToggleProductButton from '@/components/admin/delete-product-button'
 
 type ProductRow = {
   id: string
@@ -210,7 +210,7 @@ export default function CatalogClient({ products, collections }: CatalogClientPr
                       <Pencil className="w-3.5 h-3.5" />
                       Editar
                     </Link>
-                    <DeleteProductButton id={product.id} name={product.name} />
+                    <ToggleProductButton id={product.id} name={product.name} isActive={product.is_active} />
                   </div>
                 </div>
               )
@@ -291,7 +291,7 @@ export default function CatalogClient({ products, collections }: CatalogClientPr
                           >
                             <Pencil className="w-4 h-4" />
                           </Link>
-                          <DeleteProductButton id={product.id} name={product.name} />
+                          <ToggleProductButton id={product.id} name={product.name} isActive={product.is_active} />
                         </div>
                       </td>
                     </tr>

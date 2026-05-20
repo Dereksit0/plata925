@@ -39,13 +39,3 @@ export async function updateCollectionAction(
   return {}
 }
 
-export async function deleteCollectionAction(
-  id: string
-): Promise<{ error?: string }> {
-  await verifyAdminSession()
-  const supabase = await createClient()
-  const { error } = await supabase.from('collections').delete().eq('id', id)
-  if (error) return { error: error.message }
-  revalidateAll()
-  return {}
-}

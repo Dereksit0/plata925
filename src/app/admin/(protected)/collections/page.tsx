@@ -1,7 +1,6 @@
 import Link from 'next/link'
 import { createClient } from '@/lib/supabase/server'
 import { Plus, Pencil, ImageOff, Layers, ExternalLink, CheckCircle2 } from 'lucide-react'
-import DeleteCollectionButton from '@/components/admin/delete-collection-button'
 
 const VALID_SLUGS = ['aretes', 'anillos', 'dijes', 'pulseras', 'arracadas', 'cadenas', 'esclavas']
 
@@ -91,7 +90,6 @@ export default async function CollectionsPage() {
                       <Pencil className="w-3.5 h-3.5" />
                       Editar
                     </Link>
-                    <DeleteCollectionButton id={col.id} name={col.name} />
                   </div>
                 </div>
               )
@@ -176,7 +174,6 @@ export default async function CollectionsPage() {
                           >
                             <Pencil className="w-4 h-4" />
                           </Link>
-                          <DeleteCollectionButton id={col.id} name={col.name} />
                         </div>
                       </td>
                     </tr>
