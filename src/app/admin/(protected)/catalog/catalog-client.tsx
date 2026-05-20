@@ -2,8 +2,10 @@
 
 import { useState, useMemo } from 'react'
 import Link from 'next/link'
-import { Pencil, Package, ExternalLink, Search, X } from 'lucide-react'
-import ToggleProductButton from '@/components/admin/delete-product-button'
+import { Pencil, Package, ExternalLink, Search, X, Eye, EyeOff } from 'lucide-react'
+import { useRouter } from 'next/navigation'
+import { toast } from 'sonner'
+import { toggleProductVisibilityAction } from '@/app/admin/(protected)/catalog/actions'
 
 type ProductRow = {
   id: string
@@ -44,6 +46,22 @@ export default function CatalogClient({ products, collections }: CatalogClientPr
   const [search, setSearch] = useState('')
   const [collectionFilter, setCollectionFilter] = useState('')
   const [statusFilter, setStatusFilter] = useState<'all' | 'active' | 'inactive'>('all')
+  const [togglingId, setTogglingId] = useState<string | null>(null)
+  const router = useRouter()
+
+  async function handleToggle(id: string, name: string, isActive: boolean) {
+    setTogglingId(id)
+    const result = await toggleProductVisibilityAction(id, !isActive)
+    if (result.error) {
+      toast.error(result.error)
+      setTogglingId(null)
+      return
+    }
+    toast.success(isActive ? `"${name}" ocultada del sitio` : `"${name}" visible en el sitio`)
+    setStatusFilter('all')
+    setTogglingId(null)
+    router.refresh()
+  }
 
   const filtered = useMemo(() => {
     return products.filter((p) => {
@@ -210,7 +228,18 @@ export default function CatalogClient({ products, collections }: CatalogClientPr
                       <Pencil className="w-3.5 h-3.5" />
                       Editar
                     </Link>
-                    <ToggleProductButton id={product.id} name={product.name} isActive={product.is_active} />
+                    <button
+                      onClick={() => handleToggle(product.id, product.name, product.is_active)}
+                      disabled={togglingId === product.id}
+                      className={`p-2 rounded-lg transition-colors disabled:opacity-50 ${
+                        product.is_active
+                          ? 'text-emerald-600 hover:bg-emerald-50'
+                          : 'text-[#6B6B6B]/40 hover:text-[#6B6B6B] hover:bg-[#F0F0F0]'
+                      }`}
+                      title={product.is_active ? 'Ocultar del sitio' : 'Mostrar en el sitio'}
+                    >
+                      {product.is_active ? <Eye className="w-4 h-4" /> : <EyeOff className="w-4 h-4" />}
+                    </button>
                   </div>
                 </div>
               )
@@ -291,7 +320,18 @@ export default function CatalogClient({ products, collections }: CatalogClientPr
                           >
                             <Pencil className="w-4 h-4" />
                           </Link>
-                          <ToggleProductButton id={product.id} name={product.name} isActive={product.is_active} />
+                          <button
+                            onClick={() => handleToggle(product.id, product.name, product.is_active)}
+                            disabled={togglingId === product.id}
+                            className={`p-2 rounded-lg transition-colors disabled:opacity-50 ${
+                              product.is_active
+                                ? 'text-emerald-600 hover:bg-emerald-50'
+                                : 'text-[#6B6B6B]/40 hover:text-[#6B6B6B] hover:bg-[#F0F0F0]'
+                            }`}
+                            title={product.is_active ? 'Ocultar del sitio' : 'Mostrar en el sitio'}
+                          >
+                            {product.is_active ? <Eye className="w-4 h-4" /> : <EyeOff className="w-4 h-4" />}
+                          </button>
                         </div>
                       </td>
                     </tr>
