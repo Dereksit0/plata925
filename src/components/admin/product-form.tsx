@@ -59,7 +59,7 @@ export default function ProductForm({ collections, product }: ProductFormProps) 
     defaultValues: {
       name: product?.name ?? '',
       description: product?.description ?? '',
-      price: product?.price ?? 0,
+      price: Number(product?.price ?? 0),
       material: product?.material ?? 'Plata .925',
       collection_id: product?.collection_id ?? '',
       is_active: product?.is_active ?? true,
@@ -67,7 +67,7 @@ export default function ProductForm({ collections, product }: ProductFormProps) 
         product?.product_variants?.map((v) => ({
           id: v.id,
           variant_name: v.variant_name,
-          stock: v.stock,
+          stock: Number(v.stock ?? 0),
         })) ?? [],
     },
   })
